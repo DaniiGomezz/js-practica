@@ -4,7 +4,7 @@ let producto = {
     precio: 100,
     cantidad: 3
   };
-  
+  //a
   function calcularTotal(producto) {
     return producto.precio * producto.cantidad;
   }
