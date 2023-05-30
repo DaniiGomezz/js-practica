@@ -52,23 +52,18 @@ console.log(promedio); // Imprimirá el promedio ponderado
 
 
 //Act 4
-function obtenerMaximo(numeross) {
-  if (numeross.length === 0) {
-    throw new Error("El arreglo está vacío");
-  }
+function obtenerMaximo(arreglo) {
+  let maximo = arreglo[0]; 
 
-  var maximo = numeross[0];
-
-  for (var i = 1; i < numeros.length; i++) {
-    if (numeross[i] > maximo) {
-      maximo = numeros[i];
+  for (let i = 1; i < arreglo.length; i++) {
+    if (arreglo[i] > maximo) {
+      maximo = arreglo[i]; 
     }
   }
 
-  return maximo;
+  return maximo; 
 }
-
-let numeross = [5, 10, 2, 8, 3, 90, 500];
-let maximo = obtenerMaximo(numeross);
-console.log(maximo); // Imprimirá el número máximo encontrado en el arreglo
+let numeros = [5, 2, 9, 1, 7];
+let maximo = obtenerMaximo(numeros);
+console.log(maximo); // Imprimirá 9, que es el número máximo en el arregloprimirá el número máximo encontrado en el arreglo
 
